@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<title>Result</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/new1.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+<div class="container">
+<div class="wrapper">
+<div class="row">
+	<div class="col-md-6">
+	
+		<div class="feature-box">
+		<h1>Natural Language Processing App</h1>
+		<h5>Crime Detection model based on movie review</h5>
+		<div class="results">
+			{% if prediction == 1%}
+			<h2 style="color:red;">Non-Crime</h2>
+			<p>Non-Crime</p>
+			<div class="container1">
+			<div class="skills non-crime1">100%</div>
+			</div>
+
+			<p>Crime</p>
+			<div class="container1">
+			<div class="skills crime1">0%</div>
+			</div>
+			
+			
+			{% elif prediction == 0%}
+			<h2 style="color:blue;">Crime</h2>
+			<p>Crime</p>
+			<div class="container1">
+			<div class="skills crime2">100%</div>
+			</div>
+
+			<p>Non-Crime</p>
+			<div class="container1">
+			<div class="skills non-crime2">0%</div>
+			</div>
+			{% endif %}
+
+		</div>
+		
+		</div>
+	
+
+	</div>
+
+	<div class="col-md-6">
+		<img src="../static/l2.jpg" class="feature-img">
+	</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

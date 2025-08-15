@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/new1.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+<div class="container">
+<div class="wrapper">
+<div class="row">
+	<div class="col-md-6">
+	
+		<div class="feature-box">
+		<h1>Audio and Speech Processing App</h1>
+		<h5>Predict the gender and emotion of the speech data</h5>
+		<div class="ml-container">
+
+			<form action = "/success" method = "post" enctype="multipart/form-data">  
+				<input type="file" name="file" />  
+				<input type = "submit" value="Upload">  
+			</form> 
+		
+		</form>
+		
+		</div>
+		</div>
+	
+
+	</div>
+
+	<div class="col-md-6">
+		<img src="../static/l1.jpg" class="feature-img">
+	</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+
